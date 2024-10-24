@@ -16,9 +16,9 @@ insert into products values
 (110, "Mouse", 250.00, 12);
 
 SELECT pro_name, pro_price FROM products WHERE pro_price >= 250
-ORDER BY pro_name asc, pro_price desc;
+ORDER BY  pro_price desc, pro_name asc;
 
-SELECT pro_name, pro_price FROM products ORDER BY pro_price asc limit 2;
+SELECT pro_name, pro_price FROM products ORDER BY pro_price asc limit 1;
 
 SELECT AVG(pro_price) AS average_price from products;
 
